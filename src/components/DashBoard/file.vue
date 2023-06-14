@@ -17,7 +17,7 @@
 
         <template v-slot:body-cell-name="props">
             <td :key="name" :props="props">
-                <div class="row justify-evenly flex-center">
+                <div class="row justify-evenly align-left">
                     <img src="https://w7.pngwing.com/pngs/763/637/png-transparent-directory-icon-folder-miscellaneous-angle-rectangle-thumbnail.png" style="width:20px;"/>
                 {{ props.value }}
                 </div>

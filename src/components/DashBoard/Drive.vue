@@ -7,7 +7,7 @@
                 <div class="q-ma-md flex flex-center" style="width:150px;">
                     <q-input color="grey-3" label-color="orange" outlined rounded v-model="text" placeholder="Search here...">
                       <template v-slot:append>
-                        <q-icon name="search" color="orange"></q-icon>
+                        <q-icon name="search" color="orange" full-width></q-icon>
                       </template>
                     </q-input>
     
