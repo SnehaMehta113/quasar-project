@@ -1,5 +1,8 @@
 <template>
-  <q-item clickable tag="a" :to="link" >
+  <q-expansion-item v-if="submenu" :label="title">
+    <essential-link v-bind="menu" v-for="menu of submenu"></essential-link>
+  </q-expansion-item>
+  <q-item clickable tag="a" :to="link" v-else >
     <q-item-section v-if="icon" avatar >
       <q-icon :name="icon" />
     </q-item-section>
@@ -17,6 +20,9 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'EssentialLink',
   props: {
+    submenu: {
+      type: Array
+    },
     title: {
       type: String,
       required: true,

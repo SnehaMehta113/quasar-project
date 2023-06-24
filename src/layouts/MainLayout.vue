@@ -15,10 +15,7 @@
                 </q-input>
 
               </div>
-             
-
-
-            </div>
+             </div>
 
 
           </div>
@@ -78,6 +75,8 @@
           </q-item-label>
   
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
+        
+         
       </q-list>
     </div>
     
@@ -95,7 +94,7 @@
 
 
     <q-page-container>
-      <router-view />
+      <router-view class="bg-blue-grey-1"/>
     </q-page-container>
   </q-layout>
 </template>
@@ -117,7 +116,64 @@ const linksList = [
     title: 'File Manager',
     caption: '',
     icon: 'file_copy',
-    link: '/file-manager/'
+    link: '/file-manager/',
+     submenu:[
+       {
+    title: 'My Drive',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/my-drive/',
+  },
+
+  {
+    title: 'Assets',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/assets/',
+  },
+
+  {
+    title: 'Projects',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/projects/',
+  },
+
+  {
+    title: 'personal',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/personal/',
+  },
+
+  {
+    title: 'Templates',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/templates/',
+  },
+
+  {
+    title: 'Documents',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/documents/',
+  },
+
+  {
+    title: 'Media',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/media/',
+  },
+
+  {
+    title: 'Recent Files',
+    caption: '',
+    icon: 'grid_view',
+    link: '/file-manager/recent-files/',
+  },
+]
   },
   {
     title: 'To Do List',
@@ -141,15 +197,77 @@ const linksList = [
   {
     title: 'Email',
     caption: '',
-    icon: 'email',
-    link: '/Email/'
+    icon: '',
+    link: '',
+    submenu: [
+      {
+         title: 'Inbox',
+    caption: '',
+    icon: 'fiber_manual_record',
+    link: '/email/inbox'
   },
+  {
+         title: 'Compose',
+    caption: '',
+    icon: 'fiber_manual_record',
+    link: '/email/compose'
+  },
+  {
+         title: 'Read Mail',
+    caption: '',
+    icon: 'fiber_manual_record',
+    link: '/email/read-mail'
+  }
+    ]
+  },
+
+
   {
     title: 'Chat',
     caption: '',
     icon: 'chat',
     link: '/Chat/'
   },
+
+  {
+    title:'Contact List',
+    caption:'',
+    icon:'',
+    link:'',
+
+    submenu:[
+      {
+        title:'Members Grid',
+        caption:'',
+        icon:'',
+        link:'/contact-list/members-grid'
+      },
+
+      {
+        title:'Members Grid2',
+        caption:'',
+        icon:'',
+        link:'/contact-list/members-grid2'
+      },
+
+      {
+        title:'Members List',
+        caption:'',
+        icon:'',
+        link:'/contact-list/members-list'
+      },
+
+      {
+        title:'Members Profile',
+        caption:'',
+        icon:'',
+        link:'/contact-list/members-profile'
+      },
+
+
+    ]
+
+  }
 
 ]
 

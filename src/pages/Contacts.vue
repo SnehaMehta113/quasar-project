@@ -17,7 +17,7 @@
 
 import { defineComponent } from 'vue'
 
-import ContactTable from 'src/components/DashBoard/ContactTable.vue';
+import ContactTable from 'src/components/Contact/ContactTable.vue';
 
 export default defineComponent({
   name: 'Contacts',

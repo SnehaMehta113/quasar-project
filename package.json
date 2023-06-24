@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@quasar/app-vite": "^1.0.0",
+    "@quasar/quasar-app-extension-qcalendar": "^3.4.1",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.14"
   },

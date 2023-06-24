@@ -1,11 +1,13 @@
 <template>
    
+
+
 </template>
 
 
 <script>
+export default{
+    name:'BreadCrumb',
 
-export default ({
-    name:'TableCard'
-})
+}
 </script>

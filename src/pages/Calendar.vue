@@ -1,8 +1,12 @@
 <template>
-    <q-page>
+    <q-page class="bg-blue-grey-1">
         <div class="row">
             <div class="col-12">
-                <ContactTable />
+                <Calendar />
+
+            </div>
+            <div class="row justify-evenly full-width">
+              <CalendarCard v-for="i in 3" />
 
             </div>
 
@@ -17,12 +21,14 @@
 
 import { defineComponent } from 'vue'
 
-import ContactTable from 'src/components/DashBoard/ContactTable.vue';
+import Calendar from 'src/components/Calendar/Calendar.vue';
+import CalendarCard from 'src/components/Calendar/CalendarCard.vue';
 
 export default defineComponent({
-  name: 'Calendar',
+  name: 'CalendarPage',
   components:{
-    ContactTable
+    Calendar,
+    CalendarCard
     
   }
   
